@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estou aprendendo a criar sites e construindo meus primeiros projetos com HTML, CSS e JavaScript.">
+  <meta name="theme-color" content="#f8f8f0">
+  <title>Ingrid Lessa | Portfólio</title>
+  <link rel="icon" type="image/png" href="imagens/icone.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="js/script.js" defer=""></script>
+</head>
+<body>
+  <a class="atalho" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="cabecalho">
+    <nav class="container navegacao" aria-label="Navegação principal">
+      <a class="marca" href="#inicio">
+        <span class="marca-icone" aria-hidden="true"><span></span></span>
+        <span>Portfólio</span>
+      </a>
+      <button class="botao-menu" id="botao-menu" type="button" aria-controls="menu" aria-expanded="false" hidden="">
+        Menu <span class="menu-icone" aria-hidden="true"></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a class="menu-contato" href="#contato">Contato <span class="seta seta-diagonal" aria-hidden="true"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="container abertura" id="inicio" tabindex="-1" aria-labelledby="titulo-inicio">
+      <div class="apresentacao">
+        <p class="ocupacao">Estudante de Analise e desenvolvimento de sistemas</p>
+        <h1 id="titulo-inicio"><span data-nome="">Ingrid Lessa</span><span class="ponto" aria-hidden="true">.</span></h1>
+        <p class="introducao">Estou aprendendo a criar sites e construindo meus primeiros projetos com HTML, CSS e JavaScript.</p>
+        <div class="acoes-abertura">
+          <a class="botao botao-principal" href="#projetos">Ver projetos <span class="seta seta-baixo" aria-hidden="true"></span></a>
+          <a class="link-texto" href="#sobre">Sobre mim <span class="seta seta-diagonal" aria-hidden="true"></span></a>
+        </div>
+      </div>
+      <div class="quadro-retrato">
+        <div class="fundo-retrato" aria-hidden="true"></div>
+        <div class="moldura-retrato">
+          <img id="retrato" src="imagens/perfil.png" alt="Retrato de Ingrid Lessa" fetchpriority="high">
+        </div>
+        <span class="sinal-retrato" aria-hidden="true"><span class="marca-icone"><span></span></span></span>
+        <span class="cruz-retrato" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos" tabindex="-1" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <header class="cabecalho-secao">
+          <h2 id="titulo-projetos">Projetos</h2>
+          <p>Meu primeiro site e duas ideias para praticar desenvolvimento web.</p>
+        </header>
+
+        <div class="grade-projetos">
+          <article class="projeto projeto-destaque" aria-labelledby="titulo-portfolio">
+            <div class="arte arte-portfolio" aria-hidden="true">
+              <div class="mini-site">
+                <div class="mini-janela"><span></span><span></span><span></span><i></i></div>
+                <div class="mini-site-corpo">
+                  <div class="mini-site-texto">
+                    <span class="mini-site-rotulo">Desenvolvimento web</span>
+                    <strong>Meu<br>portfólio<span>.</span></strong>
+                    <span class="mini-botao">Projetos ↓</span>
+                  </div>
+                  <div class="mini-retrato"><img src="imagens/perfil.png" alt="" loading="lazy" decoding="async"></div>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-conteudo">
+              <p class="projeto-tipo">Projeto em destaque</p>
+              <h3 id="titulo-portfolio">Meu primeiro portfólio</h3>
+              <p>Site pessoal criado para apresentar minha trajetória, as tecnologias que pratico e meus primeiros trabalhos.</p>
+              <ul class="tecnologias" aria-label="Tecnologias do projeto"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <button class="link-texto detalhes-projeto" type="button" data-dialogo="projeto-portfolio" aria-haspopup="dialog" aria-controls="projeto-portfolio" aria-label="Ver detalhes de Meu primeiro portfólio" hidden="">Ver detalhes <span class="seta seta-diagonal" aria-hidden="true"></span></button>
+            </div>
+          </article>
+
+          <!-- Substitua os dois projetos de exemplo pelos trabalhos que você quiser publicar. -->
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="sobre-faixa">
+      <div class="container sobre-grade">
+        <section class="sobre-texto" id="sobre" tabindex="-1" aria-labelledby="titulo-sobre">
+          <h2 id="titulo-sobre">Sobre mim</h2>
+          
+          
+        <p>Sou estudante de tecnologia e estou me desenvolvendo na criação de sites. Gosto de pegar uma ideia, montar a página e testar como ela funciona em tamanhos diferentes de tela.</p><p>Uso o Visual Studio Code para programar e o GitHub para organizar e compartilhar meus trabalhos.</p><p>Um dos meus hobbies é cozinhar, quero terminar meu curso de gastronomia, para futuramente trabalhar como Personal Chef.</p></section>
+        <section id="habilidades" tabindex="-1" aria-labelledby="titulo-habilidades">
+          <h2 id="titulo-habilidades">Habilidades</h2>
+          <dl class="habilidades"><div><dt>HTML</dt><dd>Estrutura e semântica</dd></div><div><dt>CSS</dt><dd>Estilo e layouts responsivos</dd></div><div><dt>GitHub</dt><dd>Organização e publicação de projetos</dd></div></dl>
+        </section>
+      </div>
+    </div>
+
+    <section class="container contato" id="contato" tabindex="-1" aria-labelledby="titulo-contato">
+      <div class="contato-painel">
+        <div>
+          <h2 id="titulo-contato">Vamos conversar?</h2>
+          <p>Para falar sobre projetos e oportunidades, use um dos canais abaixo.</p>
+        </div>
+        <ul class="contatos" aria-label="Canais de contato">
+          <li>
+            
+            <a class="contato-linha" data-contato="email" href="mailto:ingrid.ilr12@gmail.com"><span><strong>E-mail</strong><span class="contato-valor" data-valor="">ingrid.ilr12@gmail.com</span></span><span class="seta seta-diagonal" aria-hidden="true"></span></a>
+          </li>
+          <li>
+            
+            <a class="contato-linha" data-contato="github" target="_blank" rel="noopener noreferrer" href="https://github.com/Ingridlessar12"><span><strong>GitHub</strong><span class="contato-valor" data-valor="">@Ingridlessar12</span></span><span class="seta seta-diagonal" aria-hidden="true"></span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container rodape">
+    <p>© <span id="ano">2026</span> <span data-nome="">Ingrid Lessa</span></p>
+    <a class="link-texto" href="#inicio">Voltar ao topo <span class="seta seta-cima" aria-hidden="true"></span></a>
+  </footer>
+
+  <dialog class="dialogo" id="projeto-portfolio" aria-labelledby="detalhe-portfolio-titulo">
+    <div class="dialogo-corpo">
+      <form method="dialog"><button class="fechar-dialogo" type="submit" aria-label="Fechar detalhes" autofocus="">×</button></form>
+      <p class="projeto-tipo">Projeto em destaque</p>
+      <h2 id="detalhe-portfolio-titulo">Meu primeiro portfólio</h2>
+      <p>O objetivo é reunir minha apresentação e meus trabalhos em um site que possa ser compartilhado em um único link.</p>
+      <h3>O que pratiquei</h3>
+      <p>Organização do conteúdo com HTML semântico, adaptação do layout a telas diferentes com CSS e interações com JavaScript.</p>
+      
+    </div>
+  </dialog>
+
+  
+
+  
+
+
+</body></html>
